@@ -38,8 +38,7 @@ def split_files_into_folders(root_folder):
                 destination_folder = others_folder
             
             # Checking if file already exists in destination
-            print(os.path)
-            if os.path.exists(destination_folder):
+            if os.path.exists(os.path.join(destination_folder,filename)):
                 choice = input(f"{destination_folder} already exists, do you want to overwrite the file? (y/n)")
                 if choice.lower() == 'y':
                     shutil.copy2(file_path, destination_folder)
@@ -48,7 +47,7 @@ def split_files_into_folders(root_folder):
                 else:
                     print("file was not copied")
             else:
-                shutil.move(file_pth, destination_folder)
+                shutil.move(file_path, destination_folder)
                 print(f"Moved {filename} to {destination_folder}")
 
 if __name__ == "__main__":
