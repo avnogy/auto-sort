@@ -16,4 +16,4 @@ These instructions will help you to get a copy of the project up and running on 
 
 - Clone the repository
 ```bash
-git clone https://github.com/<username>/file-sorter.git
+git clone https://github.com/avnogy/file-sorter.git
